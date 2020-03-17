@@ -1,0 +1,12 @@
+name: 'List from String Array'
+description: 'Create a list from a string array'
+inputs:
+  array:  # id of input
+    description: 'String array'
+    required: true
+outputs:
+  list: # id of output
+    description: 'list in string format'
+runs:
+  using: 'node12'
+  main: 'index.js'
