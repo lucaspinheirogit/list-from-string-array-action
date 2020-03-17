@@ -1,9 +1,11 @@
 const core = require('@actions/core');
 
 try {
-  const stringArray = core.getInput('stringArray');
+  const string = core.getInput('stringArray');
 
-  const stringList = '-' + stringArray.join('\n- ')
+  const stringArray = string.substring(1,string.length-1).split(',')
+
+  const stringList = '- ' + stringArray.join('\n- ')
 
   core.setOutput("stringList", stringList);
 } catch (error) {
