@@ -272,9 +272,14 @@ module.exports = require("os");
 const core = __webpack_require__(75);
 
 try {
-  const stringArray = core.getInput('stringArray');
-
-  const stringList = '-' + stringArray.join('\n- ')
+  const string = core.getInput('stringArray');
+  console.log(string)
+  
+  const stringArray = string.substring(1,string.length-1).split(',')
+  console.log(stringArray)
+  
+  const stringList = '- ' + stringArray.join('\n- ')
+  console.log(stringList)
 
   core.setOutput("stringList", stringList);
 } catch (error) {
