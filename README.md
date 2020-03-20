@@ -2,7 +2,7 @@
   <img src="https://lucas-pinheiro-s3.s3.us-east-2.amazonaws.com/list-from-string-array-action-logo.gif">
 </p>
 
-# GitHub Action to create a list from an array of strings
+# GitHub Action to create a list from an Array of Strings
 
 As simple as it sounds.
 
@@ -10,17 +10,17 @@ As simple as it sounds.
 
 | Key | Description | Type | Required | Example |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| `stringArray` | Your array of strings | `array[]` | **Yes** |`['file1.js', 'file2.js', 'file3.js']`  |
+| `stringArray` | Your Array of Strings | `String[]` | **Yes** |`['file1.js', 'file2.js', 'file3.js']`  |
 
 ## Outputs
 
 | Key | Description | Type |  Example |
 | ------------- | ------------- | ------------- | ------------- |
-| `stringList` | Your string list | `string` |```- file1.js``` <br>```- file2.js```<br>```- file3.js```|
+| `stringList` | Your String List | `String` |```- file1.js``` <br>```- file2.js```<br>```- file3.js```|
 
 ### Usage
 
-create a `.yml` file and place it inside your `.github/workflows` folder in the root of your project.
+Create a `.yml` file and place it inside your `.github/workflows` folder in the root of your project.
 ```
 .github
 └── workflows
