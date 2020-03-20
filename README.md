@@ -4,7 +4,7 @@
 
 # GitHub Action to create a list from an array of strings
 
-This action is as simple as it sounds.
+As simple as it sounds.
 
 ## Inputs
 
@@ -20,7 +20,12 @@ This action is as simple as it sounds.
 
 ### Usage
 
-create YML file
+create a `.yml` file and place it inside your `.github/workflows` folder in the root of your project.
+```
+.github
+└── workflows
+   └── example.yml
+```
 
 ### Example:
 
