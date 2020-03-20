@@ -59,6 +59,11 @@ try {
   const stringArrayInput = core.getInput("stringArray")
   if (!stringArrayInput) throw new Error("stringArray's required.")
 
+  console.log("---INPUTS---")
+  console.log("stringArray:")
+  console.log("value:", stringArrayInput)
+  console.log("type:", typeof stringArrayInput)
+
   let stringArray = stringArrayInput
   const isArray = Array.isArray(stringArrayInput)
 
@@ -77,8 +82,6 @@ try {
 
   const stringList = "- " + stringArray.join("\n- ")
 
-  console.log("---INPUTS---")
-  console.log("stringArray: ", stringArray)
   console.log("\n---OUTPUTS---")
   console.log("stringList:")
   console.log(stringList)
