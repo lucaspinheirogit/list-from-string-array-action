@@ -1,25 +1,27 @@
-# GitHub Action to create a string list from an array of strings
+# GitHub Action to create a list from an array of strings
 
 This action is as simple as it sounds.
 
 ## Inputs
 
-| Key | Value | Type | Required | Example |
+| Key | Description | Type | Required | Example |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `stringArray` | Your array of strings | `array[]` | **Yes** |`['file1.js', 'file2.js', 'file3.js']`  |
 
 ## Outputs
 
-| Key | Value | Type |  Example |
+| Key | Description | Type |  Example |
 | ------------- | ------------- | ------------- | ------------- |
-| `stringList` | Your string list | `string` |```- file1.js - file2.js - file3.js``` |
-
+| `stringList` | Your string list | `string` |```- file1.js``` <br>```- file2.js```<br>```- file3.js```|
 
 ### Usage
 
-This is an example showing a real use case for this action: creating a list of modified files in a commit.
+create YML file
 
 ### Example:
+
+This example prints a list of modified files in a commit.
+> But, you can improve this workflow by sending a message to your slack's workspace notifying that someone created/modified a database migration file. BTW, I created this action to help with that :smile:
 
 ```yaml
 name: Print Modified Files
@@ -45,6 +47,6 @@ jobs:
         with:
           stringArray: '${{ steps.modified_files.outputs.files_modified }}'
     - name: Print modified files
-      run: echo "The time was ${{ steps.modified_files_list.stringList }}"
+      run: echo "Modified files: ${{ steps.modified_files_list.stringList }}"
 ```
 
