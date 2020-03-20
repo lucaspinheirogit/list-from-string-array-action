@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://lucas-pinheiro-s3.s3.us-east-2.amazonaws.com/list-from-string-array-action-logo.gif">
+  <img height="256" width="256" src="https://lucas-pinheiro-s3.s3.us-east-2.amazonaws.com/list-from-string-array-action-logo.gif">
 </p>
 
 # GitHub Action to create a list from an Array of Strings
