@@ -38,7 +38,7 @@ name: Print Modified Files
 on:
   push:
     branches:
-    - master
+    - test
 
 jobs:
   deploy:
@@ -46,17 +46,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Get modified files
-        id: modified_files
-        uses: trilom/file-changes-action@v1.0.0
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      id: modified_files
+      uses: trilom/file-changes-action@v1.0.0
+      with:
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
     - name: Create list of modified files
-        id: modified_files_list
-        uses: lucaspinheirogit/list-from-string-array-action@v1.3
-        with:
-          stringArray: '${{ steps.modified_files.outputs.files_modified }}'
+      id: modified_files_list
+      uses: lucaspinheirogit/list-from-string-array-action@v1.3
+      with:
+        stringArray: ${{ steps.modified_files.outputs.files_modified }}
     - name: Print modified files
-      run: echo "Modified files: ${{ steps.modified_files_list.stringList }}"
+      run: echo '${{ steps.modified_files_list.outputs.stringList }}'
 ```
 
 ## License
