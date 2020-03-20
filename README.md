@@ -4,23 +4,16 @@ This action is as simple as it sounds.
 
 ## Inputs
 
-#### stringArray
-
-_Required_  - `string []` - An array of strings.
-Example:
-`['file1.js', 'file2.js', 'file3.js']` 
+| Key | Value | Type | Required | Example |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| `stringArray` | Your array of strings | `array[]` | **Yes** |`['file1.js', 'file2.js', 'file3.js']`  |
 
 ## Outputs
 
-#### stringList
+| Key | Value | Type |  Example |
+| ------------- | ------------- | ------------- | ------------- |
+| `stringList` | Your string list | `string` |```- file1.js - file2.js - file3.js``` |
 
-steps.modified_files_list.stringList - `string` - A list of strings
-Example: 
-```
-- file1.js
-- file2.js
-- file3.js
-```
 
 ### Usage
 
@@ -54,8 +47,4 @@ jobs:
     - name: Print modified files
       run: echo "The time was ${{ steps.modified_files_list.stringList }}"
 ```
-
-| Key | Value | Type | Required | Default |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| `stringArray` | Your array of strings | `array[]` | **Yes** | N/A |
 
