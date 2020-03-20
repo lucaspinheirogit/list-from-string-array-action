@@ -40,4 +40,7 @@ jobs:
           stringArray: '['orange', 'apple', 'banana']'
 ```
 
-# list-from-string-array-action
+| Key | Value | Type | Required | Default |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| `stringArray` | Your array of strings | `array[]` | **Yes** | N/A |
+
