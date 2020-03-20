@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://lucas-pinheiro-s3.s3.us-east-2.amazonaws.com/list-from-string-array-action-logo.gif">
+</p>
+
 # GitHub Action to create a list from an array of strings
 
 This action is as simple as it sounds.
