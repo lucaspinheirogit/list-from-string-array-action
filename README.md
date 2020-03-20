@@ -59,3 +59,6 @@ jobs:
       run: echo "Modified files: ${{ steps.modified_files_list.stringList }}"
 ```
 
+## License
+
+This project is distributed under the [MIT license](LICENSE.md).
