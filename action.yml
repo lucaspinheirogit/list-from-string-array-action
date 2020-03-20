@@ -1,12 +1,12 @@
-name: 'List from String Array'
-description: 'Create a list from a string array'
+name: "Create list from String Array"
+description: "Create a list from a string array"
 inputs:
   stringArray:
-    description: 'String array'
+    description: "String array"
     required: true
 outputs:
   stringList:
-    description: 'list in string format'
+    description: "list in string format"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
