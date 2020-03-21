@@ -32,7 +32,7 @@ Place this piece of code inside your `.yml` file.
 - name: Create list from array of strings
   uses: lucaspinheirogit/list-from-string-array-action@v1.4.3
   with:
-    stringArray: []
+    stringArray: '["file1","file2","file3"]'
 ```
 
 ### Example:
