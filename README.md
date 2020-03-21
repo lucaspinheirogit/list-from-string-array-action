@@ -52,7 +52,7 @@ jobs:
         githubToken: ${{ secrets.GITHUB_TOKEN }}
     - name: Create list of modified files
       id: modified_files_list
-      uses: lucaspinheirogit/list-from-string-array-action@v1.3
+      uses: lucaspinheirogit/list-from-string-array-action@v1.4.3
       with:
         stringArray: ${{ steps.modified_files.outputs.files_modified }}
     - name: Print modified files
